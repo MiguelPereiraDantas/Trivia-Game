@@ -1,0 +1,129 @@
+.question-card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-5 {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .character-img {
+    width: 100%;
+    max-width: 380px;
+  }
+  
+  .question-category {
+    background-color: #FFD33A;
+    padding: 15px;
+    border-radius: 100px;
+    text-align: center;
+    font-weight: 800;
+    color: #00274F;
+  }
+  
+  .display-question {
+    text-align: left;
+    width: 100%;
+    padding: 30px;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: white;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background-image: linear-gradient(45deg,#006BD0, #2A5C88, #003568);
+    flex-wrap: wrap;
+  }
+  
+  .display-question h3 {
+    flex: 1;
+  }
+  
+  .timer {
+    font-size: 2em;
+    font-weight: 600;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    min-width: 85px;
+    height: 85px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin-left: 20px;
+  }
+  
+  .option {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    background-image: linear-gradient(45deg,#006BD0, #2A5C88, #003568);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .option[data-color='false']:hover {
+    background: #FFD33A;
+    color: #00274F;
+  }
+  
+  [ data-color = 'green' ] {
+    background: #05A196;
+    animation: right-answer 1s ease;
+  }
+  
+  [ data-color = 'red' ] {
+    background: #D34130;
+  }
+  
+  .btn-next {
+    padding: 10px 60px;
+    margin-top: 20px;
+    background-color: #FFD33A;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #00274F;
+    cursor: pointer;
+  }
+  
+  @keyframes right-answer {
+    0% {
+      background: #05A196;
+    }
+  
+    25% {
+      background: #00BBA0;
+    }
+  
+    50% {
+      background: #05A196;
+    }
+  
+    75% {
+      background: #00BBA0;
+    }
+  
+    100% {
+      background: #05A196;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .col-5 {
+      width: 100%
+    }
+  }
+  
+  @media screen and (max-width: 380px) {
+    .timer {
+      margin: 30px auto 0;
+    }
+  }

@@ -1,0 +1,46 @@
+.login-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #003265;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .login-section form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-section form input {
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .logo {
+    width: 100%;
+    max-width: 550px;
+    margin: -50px 0 -30px;
+  }
+  
+  .btn-submit {
+    font-size: 1em;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #098788;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .btn-submit:disabled {
+    color: #777;
+    background-color: #ccc;
+  }

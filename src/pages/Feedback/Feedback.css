@@ -1,0 +1,25 @@
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto 0;
+  }
+  
+  .feedback-points {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .feedback-text {
+    font-size: 2em;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin: 100px 0;
+  }
